@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: auto;
     padding: 0%;
-    font-family: Figtree, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -12,17 +12,21 @@ body {
 #nav-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-inline: 50px;
     margin: 0%;
     width: 100%;
     position: sticky;
     top: 0%;
     background-color: white;
+    z-index: 5;
 }
 
 .list {
-    gap: 1.5rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    right: 30px;
+    margin-right: 0px;
 }
 
 .btn7 {
@@ -30,6 +34,7 @@ body {
     height: 40px;
     border: 2px solid #2F80ED;
     color: #2F80ED;
+    background-color: white;
     border-radius: 10px;
     font-weight: 600;
 }
@@ -52,17 +57,25 @@ body {
 }
 
 #sec1 {
-    margin-top: 80px;
     display: flex;
+    height: 600px;
 }
 
 #hero1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 60%;
-    padding: 15px;
+    position: relative;
+}
+
+.arow {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    height: 150px;
+    width: 170px;
 }
 
 .tag1 {
@@ -70,7 +83,14 @@ body {
     width: 85%;
     color: rgb(43, 47, 52);
 }
+.tag1 h1 i> span{
+    background: linear-gradient(0deg, #2B2F34, #2B2F34),
+    linear-gradient(0deg, #2F80ED, #2F80ED),
+    linear-gradient(0deg, #000000, #000000);
+    -webkit-background-clip: text;
+    border: 1px solid rgba(0, 0, 0, 1)s
 
+}
 .tag2 {
     width: 88%;
     display: flex;
@@ -86,6 +106,7 @@ body {
     border-image: initial;
     border-radius: 8px;
     padding: 10px;
+    z-index: 2;
 }
 
 
@@ -100,10 +121,10 @@ body {
 }
 
 #hero2>div {
-    border: 1px solid black;
     padding: 40px;
     margin-inline-end: 40px;
     border-radius: 10px;
+    box-shadow: -30px 10px 1000px 10px lightskyblue, 30px -10px 1000px 10px lightpink;
 }
 
 .head {
@@ -147,6 +168,7 @@ input {
     padding: 8px 24px !important;
     text-transform: capitalize;
     width: 100%;
+    border: none;
 }
 
 .company {
@@ -160,6 +182,7 @@ input {
 
 #sec3 {
     padding: 70px;
+    text-align: center;
 }
 
 .company>img {
@@ -174,6 +197,12 @@ input {
     text-align: center;
     flex-direction: column;
     width: 450px;
+    font-style: italic;
+}
+
+.C>p:last-child {
+    opacity: 0.8;
+    font-style: normal;
 }
 
 .btn3 {
@@ -182,6 +211,16 @@ input {
     width: 180px;
     height: 40px;
     border-radius: 10px;
+    border: none;
+}
+
+.alum {
+    text-align: center;
+    font-weight: 700;
+}
+
+.alum>p {
+    opacity: 0.8;
 }
 
 .report>div {
@@ -194,61 +233,119 @@ input {
 
 #article {
     display: flex;
-    width: 99%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 25px 10px;
-    margin-left: 20px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     border-radius: 10px;
-    width: 350px;
+    width: 380px;
     border: 2px solid rgba(215, 215, 215, 1);
-    margin: 20px;
     padding: 24px;
-    gap: 15px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    
 }
-
+.article > div{
+    position: relative;
+}
+.article p{
+    opacity: 0.8;
+}
+.article h4{
+    font-style: italic;
+    font-weight: 700;
+}
+.article  div  img:last-child{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
 #sec2 {
     background-color: rgba(236, 248, 255, 1);
-    width: 1440px;
+    width: 100%;
     height: 864px;
-    margin-top: 40px;
+    text-align: center;
+    padding: 50px 0px 50px;
+}
+
+#sec2>div {
     padding: 50px;
+}
+
+.heading {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#2f80ed, #992fed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-prim {
+    font-size: 18px;
+    background: -webkit-linear-gradient(#2f80ed, #992fed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#batch {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-
+    margin: 0px 250px;
 }
-#sec2 > h3{
-    background-color: transparent;
-color: linear-gradient(276.97deg, #992FED 0%, #2F80ED 100%);
 
-}
-.courses {
+.courses:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 30px;
+    border-radius: 5px;
     border: 2px solid #2F80ED;
-    width: 400px;
+    width: 440px;
+    background-color: white;
 }
+
+.courses:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    width: 440px;
+}
+
+.courses>div>p {
+    opacity: 0.7;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: start;
+    width: 90%;
+    table-layout: fixed;
+}
+
+td {
+    padding: 10px 0px;
+}
+
+table tr {
+    border-bottom: 1px solid gray;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
 
 .btn0 {
-    background-color: #729fda;
-    color: blue;
+    background-color: rgba(236, 248, 255, 1);
+    color: rgb(52, 141, 192);
+    border: none;
+    border-radius: 5px;
     font-size: 14px;
     height: 30px;
     width: auto;
@@ -256,34 +353,154 @@ color: linear-gradient(276.97deg, #992FED 0%, #2F80ED 100%);
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    gap: 20px;
-}
-.btn4 {
-    background-color:rgba(255, 238, 216, 1);
-    color: burlywood;
-    font-size: 14px;
-    height: 30px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 20px;
 }
 
-.btn5{
+.btn4 {
+    background-color: rgba(255, 238, 216, 1);
+    color: burlywood;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn5 {
     background-color: #fff;
     color: #2F80ED;
     height: 40px;
-    width: 100px;
+    width: 170px;
     border: 1px solid #2F80ED;
     border-radius: 10px;
 }
-.btn6{
+
+.btn6 {
     background-color: #2F80ED;
     color: white;
     height: 40px;
-    width: 100px;
+    width: 170px;
     border: 1px solid #2F80ED;
     border-radius: 10px;
+}
+.con{
+    display: none;
+}
+@media screen and (max-width:480px){
+    body{
+        width: 480px;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .list{
+        display: none;
+    }
+    #nav-bar{
+        gap: 11rem;
+        padding: 0px 20px;
+        margin: 0;
+        width: 100%;
+    }
+    .con{
+        display:inline-block;
+        font-size: 40px;
+    }
+    .A{
+        width: 100%;
+    }
+    .arow{
+        left: 100px;
+        top: 200px;
+        z-index: 0;
+    }
+    #sec1{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero1{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        text-align: center;
+        margin: 10%;
+        margin: 0;
+    }
+    #hero2 > div{
+        width: 430px;
+        margin: 30px;
+        height: max-content;
+    }
+    .tag1{
+        margin-top: 30px;
+    }
+    .tag2{
+        position: absolute;
+        top: 830px;
+        display: flex;
+        width: 450px;
+        box-sizing: border-box;
+    }
+    .B{
+        width: 100px;
+    }
+    #sec2{
+        height: auto;
+        margin: 50px 0px;
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #batch{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .courses{
+        width: 400px;
+        margin: 20px 0px;
+    }
+    #sec3{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+    }
+    .company{
+        display: inline-flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .company img {
+        max-width: 40%;
+    }
+    #sec4{
+        padding: 0;
+        margin: 0;
+    }
+    #article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap:0;
+    }
+    .article{
+        width: 400px;
+    }
 }
